@@ -4,4 +4,5 @@ def count_vowels(s):
     for char in s:
         if char in vowels:
             count += 1
+    print(count);
     return count
