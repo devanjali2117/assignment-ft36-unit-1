@@ -1,8 +1,6 @@
-def count_vowels(s):
-    vowels = 'aeiouAEIOU'
-    count = 0
-    for char in s:
-        if char in vowels:
-            count += 1
-    print(count);
-    return count
+def add_number(a,b):
+    sum=a+b
+    print(sum)
+add_number()    
+
+    
