@@ -1,0 +1,49 @@
+Task 1- Create a Database 
+create database facebook;
+show databases;
+use facebook;
+
+Task-2 Create a table
+select * from post;
+INSERT INTO post (PostID, post_title, post_discriotion, Create_By , created_at, post_likes, isPublic) VALUES
+  (1, 'The Joy of Painting', 'licity and beauty of painting with this', 'Alice', '2023-01-01 00:00:00', 5, TRUE),
+  (2, 'A Beginner\'s Guide to Programming', 'orld of programming with these easy', 'Bob', '2023-01-02 00:00:00', 20, TRUE),
+  (3, 'Top 10 Healthy Eating Habits', 'your diet and your life with these ten', 'Charlie', '2023-01-03 00:00:00', 15, TRUE),
+  (4, 'Understanding The Stock Market', 'tock market for beginners and season', 'Diana', '2023-01-04 00:00:00', 7, FALSE),
+  (5, 'The Future of Renewable Energy', 'ow renewable energy sources will sha', 'Eve', '2023-01-05 00:00:00', 33, TRUE),
+  (6, 'The Secrets of Successful Entrepreneurs', 'sets successful entrepreneurs apart fr', 'Frank', '2023-01-06 00:00:00', 12, FALSE),
+  (7, 'Exploring the World of Photography', 'r\'s guide to capturing the world throug', 'Grace', '2023-01-07 00:00:00', 9, TRUE),
+  (8, 'Mastering the Art of Cooking', 'cooking skills with these professional t', 'Hank', '2023-01-08 00:00:00', 25, TRUE),
+  (9, 'The Importance of Regular Exercise', 'ercise is crucial for your health and ho', 'Irene', '2023-01-09 00:00:00', 14, TRUE),
+  (10, 'Tips for Effective Time Management', 'ductivity with these effective time mana', 'John', '2023-01-10 00:00:00', 18, TRUE);
+
+  SELECT * FROM post;
+  describe post;
+  truncate table post;
+
+task - 3 insert and delete
+  SELECT * FROM post;
+  describe post;
+  truncate table post;
+
+task - 4 Read the data from table 
+    SELECT * FROM post;
+    select post_discriotion from post where Create_By ='Alice';
+    UPDATE posts SET post_likes = 50 WHERE PostID = 8;
+
+task - 5 update a post
+    UPDATE Post SET post_likes = 50 WHERE PostID = 8;
+
+task -6 delete a post
+    DELETE FROM Post WHERE PostID = 8;
+
+task - 7 filtering
+
+SELECT * FROM Orders WHERE OrderDate >= '2022-01-01' AND OrderDate < '2022-02-01';
+
+ 1. What is a databases ? 
+ ANS : A database is a structured set of data. It is a collection of information that is organized so that it can be easily accessed, managed, and updated. Databases can store a wide variety of data types, including text, numbers, images, and more. They are used in many different applications, from websites and mobile apps to business intelligence and data analytics.
+
+ 2. What is DBMS?
+ ANS : A Database Management System (DBMS) is a software system that allows users to define, create, maintain, and manipulate databases. A DBMS provides a systematic way to create, retrieve, update, and manage data. It serves as an interface between the database and the end-users or application programs, ensuring data integrity, security, and consistency.
+
